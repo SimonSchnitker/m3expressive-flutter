@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:m3expressive/m3expressive.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +34,7 @@ class _DemoPageState extends State<DemoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Text("This is a emphasized text", style: Theme.of(context).emphasizedTextTheme.titleLarge,),
     );
   }
 }
