@@ -34,7 +34,19 @@ class _DemoPageState extends State<DemoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("This is a emphasized text", style: Theme.of(context).emphasizedTextTheme.titleLarge,),
+      body: Column(
+        children: [
+          Text("This is a emphasized text", style: Theme.of(context).emphasizedTextTheme.titleLarge,),
+          Container(
+            height: 100,
+            width: 100,
+            decoration: BoxDecoration(
+              borderRadius: Theme.of(context).shapeTheme.borderRadius.large,
+              color: Theme.of(context).colorScheme.primaryContainer,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
